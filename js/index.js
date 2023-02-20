@@ -44,6 +44,17 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
     displayData(nameRhombus, areaRhombus);
 })
 
+// pentagon card
+document.getElementById('btn-pentagon').addEventListener('click', function(){
+    count = count + 1;
+    const namePentagon = document.getElementById('name-pentagon').innerText;
+    const pentagonP = document.getElementById('pentagon-p').value;
+    const pentagonB = document.getElementById('pentagon-b').value;
+    const areaPentagon = parseInt(0.5 * pentagonP * pentagonB);
+
+    displayData(namePentagon, areaPentagon);
+});
+
 function displayData(nameTriangle, areaTriangle){
     const container = document.getElementById('table-container')
     const tr = document.createElement('tr');
