@@ -51,9 +51,23 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
     const pentagonP = document.getElementById('pentagon-p').value;
     const pentagonB = document.getElementById('pentagon-b').value;
     const areaPentagon = parseInt(0.5 * pentagonP * pentagonB);
+    console.log(namePentagon);
 
     displayData(namePentagon, areaPentagon);
 });
+
+// ellipse card
+document.getElementById('btn-ellipse').addEventListener('click', function(){
+    count = count + 1;
+    const nameEllipse = document.getElementById('name-ellipse').innerText;
+    const ellipseA = document.getElementById('ellipse-a').value;
+    const ellipseB = document.getElementById('ellipse-b').value;
+    const areaEllipse = parseInt( 3.14 * ellipseA * ellipseB);
+    console.log(areaEllipse);
+
+    displayData(nameEllipse, areaEllipse);
+})
+
 
 function displayData(nameTriangle, areaTriangle){
     const container = document.getElementById('table-container')
