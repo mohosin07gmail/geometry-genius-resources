@@ -6,7 +6,7 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const triangleBase = document.getElementById('triangle-base').value;
     const triangleHeight = document.getElementById('triangle-height').value;
     const areaTriangle = parseInt(0.5 * triangleBase * triangleHeight);    
-    console.log(areaTriangle);
+    
     displayData(nameTriangle, areaTriangle)       
 });
 
@@ -29,9 +29,19 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
     const parallelogramBase = document.getElementById('parallelogram-base').value;
     const parallelogramHeight = document.getElementById('parallelogram-height').value;
     const areaParallelogram = parseInt(parallelogramBase * parallelogramHeight);
-    console.log(areaParallelogram);
-
+    
     displayData(nameParallelogram, areaParallelogram);
+})
+
+// rhombus card
+document.getElementById('btn-rhombus').addEventListener('click', function(){
+    count = count + 1;
+    const nameRhombus = document.getElementById('name-rhombus').innerText;
+    const rhombusd1 = document.getElementById('rhombus-d1').value;
+    const rhombusd2 = document.getElementById('rhombus-d2').value;
+    const areaRhombus = 0.5 * rhombusd1 * rhombusd2;
+
+    displayData(nameRhombus, areaRhombus);
 })
 
 function displayData(nameTriangle, areaTriangle){
