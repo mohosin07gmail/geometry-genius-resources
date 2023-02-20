@@ -22,7 +22,17 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
     displayData(nameRectangle, areaRectangle);
 })
 
+// parallelogram card
+document.getElementById('btn-parallelogram').addEventListener('click', function(){
+    count = count +1;
+    const nameParallelogram = document.getElementById('name-parallelogram').innerText;
+    const parallelogramBase = document.getElementById('parallelogram-base').value;
+    const parallelogramHeight = document.getElementById('parallelogram-height').value;
+    const areaParallelogram = parseInt(parallelogramBase * parallelogramHeight);
+    console.log(areaParallelogram);
 
+    displayData(nameParallelogram, areaParallelogram);
+})
 
 function displayData(nameTriangle, areaTriangle){
     const container = document.getElementById('table-container')
